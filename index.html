@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Convert</title>
+  </head>
+  <body>
+    <img src="./img/logo.svg" alt="Convert logo" />
+
+    <main>
+      <form>
+        <label for="amount">valor</label>
+        <input type="text" name="amount" id="amount" placeholder="0" required />
+
+        <label for="currency">moeda</label>
+        <select name="currency" id="currency" required>
+          <option value="" disabled selected hidden>Selecione a moeda</option>
+          <option value="USD">Dólar Americano</option>
+          <option value="EUR">Euro</option>
+          <option value="GBP">Libra Esterlina</option>
+        </select>
+
+        <button type="submit">Converter em reais</button>
+      </form>
+
+      <footer>
+        <span id="description">US$ 1 = R$ 4,86</span>
+        <h1 id="result">486,00 Reais</h1>
+      </footer>
+    </main>
+  </body>
+</html>

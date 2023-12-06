@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f2151;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2f3279;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("./img/bg.png");
+  background-size: contain;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 3.12rem;
+
+  color: #f1f2f6;
+}
+
+main {
+  width: 480px;
+  border-radius: 1.5rem;
+
+  border: 1px solid #2f3279;
+  overflow-y: hidden;
+}
+
+form {
+  background-color: #141534;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 3.5rem 4rem;
+}
+
+label {
+  font-size: 0.75rem;
+  color: #b2b8de;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+input,
+select {
+  outline: 0;
+
+  color: #f1f2f6;
+  border: 1px solid #1f2151;
+  border-radius: 0.5rem;
+
+  background-color: #0e0f25;
+  padding: 1.25rem 1rem;
+
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background: url("./img/chevron-down.svg") no-repeat;
+  background-position: calc(100% - 0.75rem) center !important;
+  background-color: #0e0f25;
+
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+input::placeholder,
+select:invalid,
+option {
+  color: #b2b8de;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #4a5dcd;
+}
+
+button {
+  height: 3.25rem;
+
+  background-color: #2f34ab;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  color: #f1f2f6;
+
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  margin-top: 3rem;
+  outline: 0;
+}
+
+button:hover {
+  background-color: #4a5dcd;
+}
+
+button:focus {
+  outline: 1.5px solid #4a5dcd;
+}
+
+footer {
+  background-color: #1f2151;
+  padding: 2.5rem;
+  max-height: 196px;
+
+  text-align: center;
+  display: none;
+
+  overflow-y: scroll;
+}
+
+.show-result {
+  display: block;
+}
+
+footer span {
+  color: #7d8dec;
+  font-size: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 0.5rem;
+  line-height: 1.25rem;
+}
+
+footer h1 {
+  color: #f1f2f6;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  word-break: break-all;
+}
